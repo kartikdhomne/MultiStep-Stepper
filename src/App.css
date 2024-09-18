@@ -1,0 +1,64 @@
+body {
+  font-family: sans-serif;
+}
+
+.app {
+  width: 80%;
+  margin: 10% auto;
+}
+
+.stepper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.step {
+  text-align: center;
+}
+
+.step-number {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: lightgray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.step-name {
+  font-size: 14px;
+}
+
+.active .step-number {
+  background-color: rgb(13, 125, 236);
+  color: white;
+}
+
+.complete .step-number {
+  background-color: green;
+  color: white;
+}
+
+.progress-bar {
+  height: 10px;
+  background-color: lightgray;
+  margin-bottom: 20px;
+}
+
+.progress {
+  height: 100%;
+  background-color: green;
+  transition: width 0.3s ease;
+}
+
+button {
+  background-color: black;
+  color: white;
+  margin: 10px 0;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
